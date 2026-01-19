@@ -14,27 +14,27 @@
 
 A powerful, user-friendly Minecraft server management tool built on top of [LinuxGSM](https://linuxgsm.com/). Manage multiple Minecraft servers with ease through an interactive, Minecraft-themed terminal interface.
 
-## ✨ Features
+## Features
 
-### 🎮 Multi-Server Management
+### Multi-Server Management
 - **Multiple Server Support**: Manage unlimited Minecraft servers, each with its own Linux user
 - **Automatic Discovery**: Automatically detects all installed LinuxGSM Minecraft servers
 - **Bulk Operations**: Execute commands across all servers simultaneously
 - **Port Management**: View and manage server ports and query settings
 
-### 🛠️ Server Operations
+### Server Operations
 - **Start/Stop/Restart**: Full control over server lifecycle
 - **Interactive Console**: Direct access to server console with proper signal handling
 - **Real-time Monitoring**: Health checks and status monitoring
 - **Log Viewing**: Easy access to server logs
 
-### 💾 Backup & Maintenance
+### Backup & Maintenance
 - **Automated Backups**: Create and manage server backups
 - **Backup Management**: List, cleanup, and restore from backups
 - **Full Maintenance Mode**: Comprehensive maintenance with backup, stop, update, and restart
 - **Validation Support**: Optional file validation during maintenance
 
-### 🔧 Configuration Management
+### Configuration Management
 - **Gamemode Configuration**: Survival, Creative, Adventure, Spectator
 - **World Type Selection**: Normal, Flat, Amplified, Large Biomes
 - **Flat World Presets**: Multiple presets including:
@@ -47,19 +47,19 @@ A powerful, user-friendly Minecraft server management tool built on top of [Linu
 - **Query Settings**: Enable/disable server query for monitoring tools
 - **Auto-restart Preferences**: Configure automatic restart behavior (prompt/always/never)
 
-### 🚀 Installation & Setup
+### Installation & Setup
 - **Easy Installation**: Guided installation of new Minecraft servers
 - **User Management**: Automatic Linux user creation for server isolation
 - **LinuxGSM Integration**: Seamless LinuxGSM installation and setup
 - **Server Removal**: Safe server deletion with confirmation
 
-### 🎨 User Interface
+### User Interface
 - **Minecraft-Themed Colors**: Emerald green, gold, redstone red, diamond cyan
 - **Progress Indicators**: Visual feedback for long-running operations
 - **Clear Status Display**: Running state checks for all servers
 - **Interactive Menus**: Intuitive menu-driven interface
 
-## 📋 Requirements
+## Requirements
 
 - **OS**: Linux (tested on Ubuntu/Debian-based systems)
 - **Privileges**: Root or sudo access for user management operations
@@ -70,7 +70,7 @@ A powerful, user-friendly Minecraft server management tool built on top of [Linu
   - Standard Linux utilities (`awk`, `grep`, `sed`, etc.)
 - **Network**: Internet connection for LinuxGSM downloads and updates
 
-## 🔨 Installation
+## Installation
 
 1. **Download the script**:
    ```bash
@@ -89,7 +89,7 @@ A powerful, user-friendly Minecraft server management tool built on top of [Linu
    sudo ./bincraft.sh
    ```
 
-## 🎯 Usage
+## Usage
 
 ### Starting Bincraft
 ```bash
@@ -99,20 +99,20 @@ sudo ./bincraft.sh
 ### Main Menu Options
 
 #### Basic Operations
-1. **📊 Show server details** - Display comprehensive server information
-2. **▶️ Start server** - Start selected or all servers
-3. **⏹️ Stop server** - Stop selected or all servers
-4. **🔄 Restart server** - Restart selected or all servers
-5. **📺 Open console** - Interactive console access (use Ctrl+B then D to exit)
-6. **🔍 Monitor server health** - Run health diagnostics
-7. **🪓 View logs** - Display last 50 log entries
-8. **🗺️ Check server status** - View current server state
-9. **🔌 Show server ports** - Display port configuration and query status
+1. **Show server details** - Display comprehensive server information
+2. **Start server** - Start selected or all servers
+3. **Stop server** - Stop selected or all servers
+4. **Restart server** - Restart selected or all servers
+5. **Open console** - Interactive console access (use Ctrl+B then D to exit)
+6. **Monitor server health** - Run health diagnostics
+7. **View logs** - Display last 50 log entries
+8. **Check server status** - View current server state
+9. **Show server ports** - Display port configuration and query status
 
 #### Maintenance & Updates
-10. **💾 Backup server** - Create immediate backup
-11. **📦 Backup management** - Create, list, restore, or cleanup backups
-12. **🧱 Full maintenance mode** - Complete maintenance workflow:
+10. **Backup server** - Create immediate backup
+11. **Backup management** - Create, list, restore, or cleanup backups
+12. **Full maintenance mode** - Complete maintenance workflow:
     - Display server details
     - Create backup
     - Stop server
@@ -120,17 +120,17 @@ sudo ./bincraft.sh
     - Update game files
     - Update LinuxGSM
     - Restart server
-13. **🔄 Update all servers** - Bulk update game files and LinuxGSM
+13. **Update all servers** - Bulk update game files and LinuxGSM
 
 #### Advanced Operations
-14. **💬 Send console command** - Execute commands directly to server console
-15. **🏗️ Install new server** - Create new Minecraft server with dedicated user
-16. **🔎 Check running states** - View run state of all servers at once
-17. **⚙️ Configure world** - Modify server.properties settings
-18. **🗑️ Remove server** - Delete server and associated user (requires confirmation)
-19. **🚪 Exit** - Close Bincraft
+14. **Send console command** - Execute commands directly to server console
+15. **Install new server** - Create new Minecraft server with dedicated user
+16. **Check running states** - View run state of all servers at once
+17. **Configure world** - Modify server.properties settings
+18. **Remove server** - Delete server and associated user (requires confirmation)
+19. **Exit** - Close Bincraft
 
-## ⚙️ Configuration
+## Configuration
 
 ### Auto-restart Preferences
 Bincraft stores preferences in `.bincraft.conf` in the script directory.
@@ -180,7 +180,7 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 - **Enabled**: Allows monitoring tools and server lists to connect
 - Default query port: 25565
 
-## 🏗️ Server Installation Process
+## Server Installation Process
 
 1. **Create new server** (Option 15)
 2. **Enter username** (e.g., `mcserver1`)
@@ -192,7 +192,7 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 5. **Optional automatic install**: Run `./mcbserver install` immediately
 6. **Optional automatic start**: Start server after installation
 
-## 🔒 Security Considerations
+## Security Considerations
 
 - Each server runs under its own Linux user for isolation
 - Query ports are disabled by default
@@ -200,7 +200,7 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 - Confirmation required for destructive operations (server deletion)
 - Signal handling prevents data corruption during stops
 
-## 📁 File Structure
+## File Structure
 
 ```
 /home/brian/Documents/Development/Bincraft/
@@ -216,7 +216,7 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 └── lgsm/                # LinuxGSM configuration
 ```
 
-## 🛠️ Technical Details
+## Technical Details
 
 ### Signal Handling
 - Proper SIGINT and SIGTERM handling for graceful shutdowns
@@ -233,7 +233,7 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 - Command validation and error reporting
 - Graceful fallback for failed operations
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Server not detected
 - Ensure the server script is named `mcbserver`
@@ -255,24 +255,24 @@ Bincraft stores preferences in `.bincraft.conf` in the script directory.
 - Verify user has proper home directory permissions
 - Check server file ownership: `ls -la /home/[username]/`
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit pull requests or open issues.
 
-## 📄 License
+## License
 
 This project is provided as-is. Please ensure compliance with Minecraft's EULA and LinuxGSM's license.
 
-## 🔗 Links
+## Links
 
 - [LinuxGSM](https://linuxgsm.com/)
 - [Minecraft](https://www.minecraft.net/)
 - [Minecraft Server Properties](https://minecraft.fandom.com/wiki/Server.properties)
 
-## 👤 Author
+## Author
 
 **BRDC.nl**
 
 ---
 
-**⛏️ Happy Mining! 💎**
+**Happy Mining!**
