@@ -67,6 +67,7 @@ Select **Option 9 (Install New Server)**. Provide a simple, lowercase name (e.g.
 Use **Option 10 (Status Overview)** to see a table of all active servers and their assigned ports. Ensure these ports are open in your firewall:
 ```bash
 sudo ufw allow 25565/tcp
+```
 
 ## 🛡️ Security Note
 ​Because Bincraft runs servers under separate users, it effectively prevents:
