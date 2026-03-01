@@ -77,5 +77,7 @@ sudo ufw allow 25565/tcp
 
 ## ​🤝 Credits
 ​Engine: LinuxGSM
+
 ​Developer: BRDC.nl
+
 ​<!-- end list -->
